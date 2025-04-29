@@ -70,6 +70,7 @@ async function getArtist() {
       `${lastFMURL}?method=geo.gettopartists&country=${text.value}&api_key=${api_key}&page=${page.value}&limit=${tableSize.value}&format=json`,
     )
     artistLoading.value = true
+    country.value = text.value
     artist_data.value = []
     if (!response.ok) {
       throw new Error(`Response status: ${response.status}`)
@@ -104,7 +105,7 @@ watch([page, tableSize], () => getArtist())
 // checks if text is a valid country based on the list we recieve from the countries api
 watch(text, () => {
   if (inputList.value && inputList.value.find(country => country === text.value)) {
-    country.value = text.value
+    page.value = 1
     errorMessage.value = null
   }
   else {
