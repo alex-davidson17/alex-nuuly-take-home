@@ -1,6 +1,6 @@
 # Nuuly Front-End take home project
 
-This project was built as a take-home assignment for Nuuly's interview process. Track Ninja displays data for the top artists of a country chosen by the user. The list of countries is generated via the (REST Countries API)[https://restcountries.com/].
+This project was built as a take-home assignment for Nuuly's interview process. Track Ninja displays data for the top artists of a country chosen by the user. The list of countries is generated via the [REST Countries API](https://restcountries.com/).
 
 ## Recommended IDE Setup
 
@@ -35,6 +35,8 @@ npm run test:unit
 ```
 
 In order to run queries locally you need to use a [Last.fm API key](https://www.last.fm/api/authentication). For the purpose of this short demo I decided to hard code my api key into this application. I would never do this under normal circumstances, however, I will leave it because this application should only be shared amongst a few people in Nuuly's hiring team.
+
+You can add the API key that I provided via email [here](https://github.com/alex-davidson17/alex-nuuly-take-home/blob/2d8dd6ef0f5c6eb766ee2371b0d76f8697ee68cf/src/App.vue#L11).
 
 Please note that this application is run entirely on the client side so your API key will be exposed when doing any queries.
 
