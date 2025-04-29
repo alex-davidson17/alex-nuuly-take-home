@@ -1,4 +1,4 @@
-# fe-engineering-challenge
+# Nuuly Front-End take home
 
 This project was built as a take-home assignment for Nuuly's interview process. Track Ninja displays data for the top artists of a country chosen by the user. The list of countries is generated via the (REST Countries API)[https://restcountries.com/].
 
