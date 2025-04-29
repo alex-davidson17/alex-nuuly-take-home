@@ -7,7 +7,83 @@
     <title>App</title>
   </head>
   <body>
+    <div id="background-orbs">
+      <div id="orb-container">
+      <div class="blob" id="orb1"></div>
+      <div class="blob" id="orb2"></div>
+    </div>
+    </div>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
+<style>
+  body {
+  background: #e9d5ff;
+}
+#background-orbs {
+  position: fixed;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+#orb-container {
+  animation: moveShape 20s cubic-bezier(0.445,0.05,0.55,0.95) infinite alternate;
+  margin-top: -500px;
+}
+.blob {
+  aspect-ratio: 1/1;
+  background: linear-gradient(#e9d5ff, #c084fc);
+  border-radius: 30% 70% 70% 30%, 30% 40% 70% 70%;
+  filter: blur(50px);
+  animation: changeShape 30s linear infinate, rotateShape 20s linear infinite;
+}
+#orb1{
+  width: 1500px;
+}
+#orb2 {
+  width: 1000px;
+}
+@keyframes rotateShape {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes moveShape {
+  0%, 100% {
+    transform: translate(5%,0);
+  }
+  25% {
+    transform: translate(15%, 10vh);
+  }
+  50% {
+    transform: translate(25%, 20vh);
+  }
+  75% {
+    transform: translate(10%, 30vh);
+  }
+}
+
+@keyframes changeShape {
+  0%, 100% {
+    border-radius: 30% 70% 70% 30%, 30% 40% 70% 70%;
+  }
+  20% {
+    border-radius: 40% 65% 50% 50%, 40% 35% 35% 65%;
+  }
+  40% {
+    border-radius: 35% 65% 65% 35%, 65% 50% 50% 25%;
+  }
+  60% {
+    border-radius: 40% 65% 50% 50%, 30% 30% 70% 75%;
+  }
+  80% {
+    border-radius: 40% 60% 40% 60%, 50% 50% 50% 60%;
+  }
+}
+</style>
