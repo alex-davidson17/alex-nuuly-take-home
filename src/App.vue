@@ -8,7 +8,7 @@ const page = ref(1)
 const country = ref('')
 const tableSize = ref(25)
 const artist_data = ref()
-const api_key = '36802c4f539a97703d695f2e2311bdb1' // please don't use this nefariously
+const api_key = '' // insert key here
 
 // separate loaders for country and artist data (table)
 const countryLoading = ref(false)
