@@ -57,4 +57,4 @@ Proposed architecture diagram:
 ## If I had more time I would
 
 - Add more robust testing and split components down further (ex. select and input).
-- Query the Last.fm API for more fields on the table such as artist [top tracks](https://www.last.fm/api/show/artist.getTopTracks), [genre](https://www.last.fm/api/show/artist.getTopTags), and [albums](https://www.last.fm/api/show/artist.getTopAlbums).
+- Query the Last.fm API for more fields on the table such as artists' [top tracks](https://www.last.fm/api/show/artist.getTopTracks), [genre](https://www.last.fm/api/show/artist.getTopTags), and [albums](https://www.last.fm/api/show/artist.getTopAlbums).
